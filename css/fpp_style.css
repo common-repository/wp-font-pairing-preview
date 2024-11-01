@@ -1,0 +1,28 @@
+@CHARSET "ISO-8859-1";
+.ui-autocomplete {
+    max-height: 100px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+    /* add padding to account for vertical scrollbar */
+    padding-right: 20px;
+}
+
+
+/* workarounds */
+* html .ui-autocomplete { 
+    height: 100px;
+	width:1px; 
+} /* without this, the menu expands to 100% in IE6 */
+
+.custom_yellow_box {
+background: rgb(247, 240, 218);
+font-size: 14px;
+border: 1px solid #D1B655;
+color: #3F2502;
+margin: 10px 0px 5px 0px;
+padding: 10px;
+text-shadow: 1px 1px #FFF;
+border-radius: 10px 10px 10px 10px;
+width: 50%;
+}

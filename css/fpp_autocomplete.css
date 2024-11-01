@@ -1,0 +1,16 @@
+@CHARSET "ISO-8859-1";
+.ui-autocomplete {
+    max-height: 100px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+    /* add padding to account for vertical scrollbar */
+    padding-right: 20px;
+}
+
+
+/* workarounds */
+* html .ui-autocomplete { 
+    height: 100px;
+	width:1px; 
+} /* without this, the menu expands to 100% in IE6 */
